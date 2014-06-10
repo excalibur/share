@@ -2,8 +2,299 @@
 <html>
 <head>
 	<title></title>
+
+	<style type="text/css">
+/*reset*/
+html,body,div,figure,img,header,ul,li,a{
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+body{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #333;
+	background-color: #fff;
+}
+.footer-wrap {
+width: 100%;
+padding-bottom: 3em;
+margin: 0 auto;
+clear: both;
+text-align: center;
+}
+a{
+	color: #428bca;
+text-decoration: none;
+}
+/*layout*/
+.col-9{
+	max-width: 900px;
+	width: 100%;
+	margin: auto;
+	box-sizing: border-box;
+}
+.col-3{
+	max-width: 300px;
+	width: 33.333333%;
+	margin: auto;
+	box-sizing: border-box;
+}
+
+/*items*/
+.share{
+	padding-top: 2em;
+	clear: both;
+}
+.share iframe{
+	min-height: 289px;
+	width: 100%;
+	overflow: hidden;
+	opacity: 1;
+	transition: opacity .6s;
+}
+.menu{
+	padding: .3em .3em;
+}
+.wrap{
+	padding: .3em;
+}
+
+
+figure{
+	float: left;
+	position: relative;
+	line-height: 0;
+	padding: .3em;
+	cursor: pointer;
+}
+figure a{
+	position: absolute;
+	width: 289px;
+	height: 289px;
+	top: 5px;
+}
+.iframe-wrap:before{
+	content: '';
+	position: absolute;
+	top: .3em;
+	left: .3em;
+	right: .3em;
+	bottom: .3em;
+	background-color: rgba(255,255,255,.7);
+	opacity: 0.5;
+	transition: opacity 2s,
+	background-color .4s; 
+}
+.iframe-wrap:hover:before{
+	background-color: rgba(251,11,63,1);
+	opacity: 0;
+
+}
+
+h1{color: #444;
+	font-size: 44px;
+	font-family: 'Open Sans Condensed', sans-serif;}
+nav{
+	margin-top: 45px;
+}
+nav ul li {
+	display: inline;
+}
+nav ul li a{
+	text-decoration: none;
+	padding: .5em 1.5em.5em;
+	color: #444;
+	font-size: 18px;
+	font-family: 'Open Sans Condensed', sans-serif;
+	transition: color .6s, background-color .2s;
+}
+nav ul li a:hover{
+	background-color: #FB0B3F;
+	color: #fff;
+}
+.active a{
+	border: solid 1px #FB0B3F;
+	color: #FB0B3F;
+}
+
+@media only screen and (min-width: 600px) {
+	header{float: left}
+	nav{float: right;
+		text-align: right;}
+}
+	</style>
 </head>
 <body>
-waiting
+<div class="wrap col-9">
+		<div class="menu col-9">
+			<header><h1>分享</h1></header>
+			<nav>
+				<ul class="navigate">
+					<li data-type="all" class="active"><a href="#all">全部</a></li>
+					<li data-type="html5"><a href="#html5">HTML5</a></li>
+					<li data-type="css3"><a href="#css3">CSS3</a></li>
+					<li data-type="canvas"><a href="#canvas">Canvas</a></li>
+					<li data-type="svg"><a href="#svg">SVG</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="share col-9">
+			<figure class="col-3">
+
+				<iframe src="http://leeln.com/share/html5/AnimatedCheckboxes/" title="html5" scrolling="no" frameborder="0" style="opacity: 1;">
+					
+				</iframe>
+				<a href="http://leeln.com/share/html5/AnimatedCheckboxes/" target="_blank"></a>
+			</figure>
+
+			<figure class="col-3">
+				<iframe src="http://leeln.com/share/html5/CircularProgressButton/" title="html5" scrolling="no" frameborder="0" style="opacity: 1;">
+					
+				</iframe>
+				<a href="http://leeln.com/share/html5/CircularProgressButton/" target="_blank"></a>
+			</figure>
+
+			<figure class="col-3">
+				<iframe src="http://leeln.com/share/html5/CreativeLoadingEffects/" title="html5" scrolling="no" frameborder="0" style="opacity: 1;">
+					
+				</iframe>
+				<a href="http://leeln.com/share/html5/CreativeLoadingEffects/" target="_blank"></a>
+			</figure>
+
+			<figure class="col-3">
+				<iframe src="http://leeln.com/share/html5/FullscreenBookBlock/" title="html5" scrolling="no" frameborder="0" style="opacity: 1;">
+					
+				</iframe>
+				<a href="http://leeln.com/share/html5/FullscreenBookBlock/" target="_blank"></a>
+			</figure>
+
+			<figure class="col-3">
+				<iframe src="http://leeln.com/share/html5/GoogleNexusWebsiteMenu/" title="html5" scrolling="no" frameborder="0" style="opacity: 1;">
+					
+				</iframe>
+				<a href="http://leeln.com/share/html5/GoogleNexusWebsiteMenu/" target="_blank"></a>
+			</figure>
+
+			<figure class="col-3">
+				<iframe src="http://leeln.com/share/html5/MinimalForm/" title="html5" scrolling="no" frameborder="0" style="opacity: 1;">
+					
+				</iframe>
+				<a href="http://leeln.com/share/html5/MinimalForm/" target="_blank"></a>
+			</figure>
+
+			<figure class="col-3">
+				<iframe src="http://leeln.com/share/html5/PageLoadingEffects/" title="html5" scrolling="no" frameborder="0" style="opacity: 1;">
+					
+				</iframe>
+				<a href="http://leeln.com/share/html5/PageLoadingEffects/" target="_blank"></a>
+			</figure>
+
+			<figure class="col-3">
+				<iframe src="http://leeln.com/share/svg/AnimatedSVGIcons/" title="html5" scrolling="no" frameborder="0" style="opacity: 1;">
+					
+				</iframe>
+				<a href="http://leeln.com/share/svg/AnimatedSVGIcons/" target="_blank"></a>
+			</figure>
+
+			<figure class="col-3">
+				<iframe src="http://leeln.com/share/svg/SVGDrawingAnimation/" title="html5" scrolling="no" frameborder="0" style="opacity: 1;">
+					
+				</iframe>
+				<a href="http://leeln.com/share/svg/SVGDrawingAnimation/" target="_blank"></a>
+			</figure>
+
+		</div>
+
+	</div>	
+<div class="footer-wrap">
+  <footer>
+    <span>&copy; 2014 欧阳澄泓. Hosted on  <a href="https://pages.github.com">GitHub Pages</a> | blog under <a href="http://creativecommons.org/licenses/by-sa/3.0/deed.zh" target="_blank">CC BY-SA 3.0 协议</a>.</span>
+
+  </footer>
+</div><!-- /.footer-wrap -->
+
+ <script>
+    	window.onload=function(){
+		function navigation(activeClass, ulClass, imgContainerClass, sClass){
+		this.activeClass = activeClass;
+		this.ulClass = ulClass;
+		this.imgContainerClass = imgContainerClass;
+		this.imgSingleClass = sClass;
+		this.imgDefaultClass = this.imgContainerClass.children[0].className;
+	};
+	navigation.prototype.clearClass = function() {
+		var liLength = this.ulClass.children.length;
+		for(var i=0; i< liLength; i++){
+		this.ulClass.children[i].removeAttribute("class") }
+	};
+
+	navigation.prototype.createClass = function(e){
+			this.clearClass();
+			var c= this.activeClass,
+				li= this.ulClass.children[e] ;
+				li.setAttribute("class",c);	
+	};
+	navigation.prototype.faded = function(i,value){
+		return i.style.opacity = value || 1;
+	};
+	navigation.prototype.fadedExt = function(i,value,s){
+		(s)?i.parentNode.className = this.imgSingleClass			
+		: i.parentNode.className = this.imgDefaultClass;
+			this.faded(i,value);
+	};
+	navigation.prototype.imgShow = function(e){
+		this.createClass(e);
+		var maxImg = this.imgContainerClass.children.length;
+		for (var l = 0; l < maxImg; l++) {
+			var parent = this.imgContainerClass,
+				image = parent.children[l].firstElementChild,
+				att = image.getAttribute("title"),// title,
+				nav = this.ulClass.children[e].getAttribute("data-type");
+
+				this.fadedExt(image,0.3,1);
+				if (nav == att) {
+					this.fadedExt(image,1,1);}
+				else if(nav == "all"){
+					this.fadedExt(image);}
+		}
+	};
+	navigation.prototype.sign = function(e){
+				var parent = this.ulClass,
+					ths = this,
+					child = parent.children[e];
+
+				child.firstElementChild.onclick = function(){ return false};
+				return child.onclick = function(){ths.imgShow(e);} 
+
+	};
+	navigation.prototype.render = function(){
+			var liLength = this.ulClass.children.length;
+			for(var k=0; k<liLength; k++){
+			this.sign(k);	
+			}
+	};
+	/*
+	******************************
+	*=obj creat
+	******************************
+	*/
+	var 	ulPortfolio = document.getElementsByClassName("navigate")[0],
+			imgPortfolio = document.getElementsByClassName("share")[0],
+			aclass = "active",
+			imgFigureClass = "col-3",
+			navport = new navigation(aclass,ulPortfolio,imgPortfolio,imgFigureClass);
+
+			navport.render();
+
+
+
+			
+
+	}
+	
+    //@ sourceURL=pen.js
+  </script>
 </body>
 </html>
